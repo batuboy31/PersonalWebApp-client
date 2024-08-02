@@ -1,0 +1,10 @@
+<form [formGroup]="frm" (ngSubmit)="onSubmit(frm.value)">
+    <input type="text" placeholder="name" formControlName="name"> <br>
+    <div *ngIf="!name.valid && (name.dirty || name.touched)">
+          {{name.errors | json}}
+    </div>
+    <input type="text" placeholder="Surname" formControlName="surname"> <br>
+    <input type="text" placeholder="Email" formControlName="email"> <br>
+    <input type="text" placeholder="Tel" formControlName="tel"> <br>
+    <button>SEND</button>
+</form>

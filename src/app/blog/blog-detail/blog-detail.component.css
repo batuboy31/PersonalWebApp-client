@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: center; /* Yatayda ortalar */
+    align-items: center; /* Dikeyde ortalar */
+    min-height: 100vh; /* Ekranın tamamını kaplar */
+    padding: 20px; /* Etrafında boşluk bırakır */
+    box-sizing: border-box; /* Padding'i dahil eder */
+  }
+  
+  .long-text-box {
+    max-width: 600px; /* Kutunun maksimum genişliğini ayarlar */
+    width: 100%; /* Genişliğini %100 yapar */
+    padding: 20px; /* İçeriden boşluk bırakır */
+    border: 1px solid #ccc; /* Kenarlık ekler */
+    border-radius: 10px; /* Kenarları yuvarlatır */
+    word-wrap: break-word; /* Kelimeleri satır sonuna geldiğinde böler */
+    white-space: pre-wrap; /* Boşluk ve yeni satır karakterlerini korur */
+    overflow-wrap: break-word; /* Uzun kelimeleri böler */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif bir gölge ekler */
+    background-color: #fff; /* Arka plan rengini beyaz yapar */
+  }

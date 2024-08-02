@@ -1,0 +1,38 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Kartlar arasındaki boşluk */
+  justify-content: flex-start;
+  padding: 0 8px; /* Sağ ve sol kenarlardaki boşluğu azaltmak için */
+  box-sizing: border-box;
+}
+
+.example-card {
+  flex: 1 1 calc(25% - 16px); /* Kart genişliği: %25 */
+  box-sizing: border-box;
+  margin: 8px;
+  max-width: 250px; /* Kartların maksimum genişliği */
+  min-width: 200px; /* Kartların minimum genişliği */
+}
+
+/* Küçük ekranlar için düzenlemeler */
+@media (max-width: 1200px) {
+  .example-card {
+    flex: 1 1 calc(33.33% - 16px); /* Kart genişliği: %33.33 */
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 992px) {
+  .example-card {
+    flex: 1 1 calc(50% - 16px); /* Kart genişliği: %50 */
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .example-card {
+    flex: 1 1 calc(100% - 16px); /* Kart genişliği: %100 */
+    max-width: 250px;
+  }
+}

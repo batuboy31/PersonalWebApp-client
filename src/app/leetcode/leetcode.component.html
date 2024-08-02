@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="left">
+        <app-list [items]="items" (itemSelected)="onItemSelected($event)"></app-list>
+    </div>
+    <div class="right">
+       <app-solution [description]="selectedDescription"></app-solution>
+    </div>
+  </div>
+  

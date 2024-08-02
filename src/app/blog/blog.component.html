@@ -1,0 +1,18 @@
+
+<input type="text" [(ngModel)]="searchTerm" placeholder="Search...">
+
+<div class="card-container">
+  
+  <mat-card class="example-card" appearance="outlined" *ngFor="let item of filteredItems">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+      </mat-card-header>
+      <img mat-card-image src="assets/angular_logo.png" alt="img">
+      <mat-card-content>
+        <p>{{ item.title }}</p>
+        <!-- <button (click)="viewDetails(item.id)">Detail</button> -->
+          <button><a routerLink="/blog/detail/{{item.id}}">Detail</a></button>
+      </mat-card-content>
+    </mat-card>
+    <router-outlet></router-outlet>
+  </div>

@@ -1,0 +1,32 @@
+.navbar {
+    height: 60px; /* Navbar yüksekliğini belirleyin */
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2em; /* Menü öğeleri arasındaki boşluk */
+  }
+  
+  li {
+    display: inline;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .active{
+    color: goldenrod;
+  }

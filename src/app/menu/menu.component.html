@@ -1,0 +1,18 @@
+<!-- <nav class="navbar">
+    <ul>
+      <li><a (click)="navigateTo('blog')">BLOG</a></li>
+      <li><a (click)="navigateTo('leetcode')">LEETCODE</a></li>
+      <li><a (click)="navigateTo('login')">LOGIN</a></li>
+    </ul>
+  </nav> -->
+
+  <nav class="navbar">
+    <ul>
+      <li><a a routerLink="blog" routerLinkActive="active">BLOG</a></li>
+      <li><a routerLink="leetcode" routerLinkActive="active">LEETCODE</a></li>
+      <li><a a routerLink="login" routerLinkActive="active">LOGIN</a></li>
+      <li><a a routerLink="about" routerLinkActive="active">ABOUT</a></li>
+    </ul>
+  </nav>
+  <br>
+  <router-outlet></router-outlet>

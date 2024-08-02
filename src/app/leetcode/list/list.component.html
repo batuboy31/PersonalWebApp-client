@@ -1,0 +1,7 @@
+<div class="titles">
+   <input type="text" [(ngModel)]="searchTerm" placeholder="Search..."/>
+
+   <ul>
+      <li *ngFor="let item of filteredItems" (click)="selectItem(item)">{{item.title}}</li>
+    </ul>
+</div>
